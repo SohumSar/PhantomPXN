@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+.sidebar {
+    border-right: 3px solid rgb(0, 255, 102);
+}
+
+/* rgb(73,93,60) */
+
+.text-green {
+    color: rgb(0, 255, 102);
+    font-weight: 700;
+}
+.ghost {
+    animation: App-logo-spin 7s infinite linear;
+}
+
+.banner {
+    fill: grayscale(1.0);
+}
+
+.mint-btm {
+    background-color: rgb(0,119,48);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.modal {
+    transition: visibility 0s, opacity 0.3s linear;
+    border: 5px solid white;
+}
+
+.modal-button {
+    transition: clip-path 0.2s linear;
+}
+
+.modal-btn-wallet {
+    clip-path: unset;
+}
+
+.modal-button:hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
